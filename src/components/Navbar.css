@@ -1,0 +1,119 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost" , sans-serif;
+}
+/* @keyframes logoo{
+    from {transform: translateY(-6rem);}
+    to {transform: translateY(0);}
+} */
+/* html{
+    font-size: 62.5%;
+} */
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.main-nav{
+    height: 10rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+}
+.logo-section{
+    display: flex;
+    grid-column: 2/3;
+    justify-content: flex-start;
+    align-items: center;
+}
+.action-section{
+    grid-column: 3/4;
+}
+.action-section ul{
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-media{
+    grid-column: 4/5;
+}
+.social-media ul{
+    height:10rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-media ul li{
+    text-align: right;
+}
+
+.social-media ul li:first-child{
+    grid-column: 2/3;
+}
+
+@media (max-width : 1080px) {
+    .main-nav{
+        height :8rem;
+        grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+    }
+    .logo-section,.action-section ul,.social-media ul {
+        height: 8rem;
+    }
+}
+.hamburger-menu{
+    display: none;
+}
+
+.mobile,.off{
+    display: none;
+}
+
+@media (max-width : 998px){
+    .main-nav{
+        height: 6rem;
+    }
+    .action-section{
+        display: none;
+    }
+    .social-media .social-media-desktop{
+        height: 0;
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+        height: 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile{
+        display: grid;
+    }
+    .off{
+        display: none;
+    }
+    .mobile ul{
+        height: 60vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .li1{
+        grid-row: 1/2;
+    }
+    .li2{
+        grid-row: 2/3;
+    }
+    .li3{
+        grid-row: 3/4;
+    }
+    .li4{
+        grid-row: 4/5;
+    }
+}
