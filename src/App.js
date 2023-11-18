@@ -3,16 +3,29 @@ import Navbar from './components/Navbar'
 import Container from './components/Container'
 
 const App = () => {
-  let arr =[];
-  for(let i=1;i<=100;i++){
-    arr.push(i);
-  }
   return (
     <>
       <Navbar/>
-      {arr.map((value,index)=> {
-        return <Container/>;
-      })};
+      <div style={{"height":"30vh"}}>
+
+      </div>
+      <div style={{"height":"30vh"}}>
+      </div>
+      <div style={{"height":"30vh"}}>
+      </div>
+      <div style={{"height":"30vh"}}>
+      </div>
+      <div style={{"height":"30vh"}}>
+      </div>
+      <Container/>
+      <div style={{"height":"30vh"}}>
+      </div>
+      <div style={{"height":"30vh"}}>
+      </div>
+      <div style={{"height":"30vh"}}>
+      </div>
+      <div style={{"height":"30vh"}}>
+      </div>
     </>
   )
 }
